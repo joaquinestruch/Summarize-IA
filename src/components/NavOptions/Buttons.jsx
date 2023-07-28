@@ -68,7 +68,6 @@ export function SelectExtractiveness({setBodyRequest}) {
 }
 
 export function ButtonSubmit({ textArea, setTextSummary, wordCount,bodyRequest, setChangeButton, changeButton }) {
-  console.log(wordCount)
   return (
     <div>
       <p>summary</p>
