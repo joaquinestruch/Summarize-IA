@@ -1,0 +1,259 @@
+@font-face {
+    font-family: 'RobotoBold'; /* Nombre que utilizarás para referenciar a esta fuente */
+    src: url('../fonts/RobotoMono-Bold.ttf') format('truetype'); /* Formato del archivo y su ubicación */
+}
+
+@font-face {
+    font-family: 'RobotoLight'; /* Nombre que utilizarás para referenciar a esta fuente */
+    src: url('../fonts/RobotoMono-Light.ttf') format('truetype'); /* Formato del archivo y su ubicación */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: RobotoBold;
+    height: 10vh;
+    background-color: #202123;
+    color: white;
+    border-radius: 0px 0px 40px 40px;
+}
+
+main{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #343541;
+}
+
+main > .input-output{
+    height: 80%;
+    width: 70%;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: row;
+    gap: 50px;
+}
+
+main > .input-output > * {
+    width: 50%;
+    height: auto;   
+}
+
+
+main > .input-output > .text-area-total > .container-data-div-output-input > p {
+    padding: 10px;
+    font-family: RobotoBold;
+    background-color: #202123;
+    color: white;
+    margin-top: 0;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+main > .input-output > .text-area-total > p > svg{
+    cursor: pointer;
+}
+.text-area-total {
+    position: relative;    
+    border: #202123 1px solid;
+    border-radius: 15px;
+    overflow-y: scroll;
+    word-wrap: break-word;
+}
+
+.text-area-total::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  
+  .text-area-total::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .container-output-ia::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .container-output-ia::-webkit-scrollbar {
+    width: 0.5em;
+  }
+.info-icon::before {
+    content: "Min letters: 250. Max letters: 50.000";
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(71, 71, 71, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    z-index: 9999;
+    top: 20px;
+    left: 200px;
+    font-family: RobotoBold;
+  }
+  
+.info-icon:hover::before {
+    display: block;
+    
+}
+
+main > .input-output > .text-area-total > textarea{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    resize: none;
+    padding: 10px;
+    margin: 0;
+    font-family:RobotoLight ;
+    color: white;
+    height: 90%;
+    width: 95%;
+    margin: auto;
+    padding-left: 10px;
+    font-weight: bold;
+
+
+}
+
+.output-ia{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    resize: none;
+    padding: 10px;
+    margin: 0;
+    font-family:RobotoLight ;
+    color: white;
+    height: 90%;
+    width: 95%;
+    margin: auto;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+
+
+}
+
+.btn-summarize{
+    border: none;
+    margin: 10px;
+    font-size: 1rem;
+    border-radius: 20px;
+    padding: 7px;
+    background-color: #202123;
+    color: white;
+    cursor: pointer;
+
+}
+
+svg{
+    z-index: 1;
+}
+
+.container-output-ia{
+    border: #73a89a 1px solid;
+    border-radius: 15px;
+    overflow-y: scroll;
+    word-wrap: break-word;
+    
+}
+.container-output-ia > div >  p{
+    padding: 10px;
+    font-family: RobotoBold;
+    background-color: #73a89a;
+    color: white;
+    margin-top: 0;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.alert-error{
+    width: 450px; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #ef4444;
+    padding: 10px;
+    border-radius: 20px;
+    color: #580505;
+    display: inline;
+    font-family: RobotoBold;
+    position: absolute;
+    top: 105px;
+    z-index: 1000;
+    
+}
+
+.alert-error > svg{
+    padding-right: 20px;
+}
+
+#toggleButton {
+    display: none; 
+}
+
+@media screen and (max-width: 768px) and (max-height: 1024px) {
+
+    .alert-error{
+        width: 80%; 
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        background-color: #ef4444;
+        padding: 10px;
+        border-radius: 20px;
+        color: #580505;
+        display: inline;
+        font-family: RobotoBold;
+        position: absolute;
+        top: 105px;
+        
+    }
+
+    #toggleButton {
+        display: block;
+        position: absolute;
+        background-color: #73a89a;
+        z-index: 10;
+        top: 18%;
+        right: 12%;
+
+    }
+
+
+
+    .nondisplay{
+        display: none;
+    }
+
+
+    
+    section.input-output{
+        display: flex;
+        flex-direction: column;
+        height: 200vh;
+        width: 90vw;
+        margin: auto;
+        margin: 20px;
+    }
+
+    section.input-output > *{
+        margin: auto;
+        height: 70%;
+        width: 80%;
+    }
+
+    main{
+        flex-direction: column;
+    }
+}
