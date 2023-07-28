@@ -69,7 +69,7 @@ main > .input-output > .text-area-total > p > svg{
 }
 
 .text-area-total::-webkit-scrollbar {
-    width: 0.5em;
+    width: 0em;
   }
   
   .text-area-total::-webkit-scrollbar-track {
@@ -81,7 +81,7 @@ main > .input-output > .text-area-total > p > svg{
   }
 
   .container-output-ia::-webkit-scrollbar {
-    width: 0.5em;
+    width: 0em;
   }
 .info-icon::before {
     content: "Min letters: 250. Max letters: 50.000";
